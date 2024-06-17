@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册页面</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+    <div class="regiter2">
+        <h1 class="word_top">注册页面</h1><br>
+        <form>
+            <table>
+                <tr>
+                    <td>用户名：</td>
+                    <td><input type="text" id="username" name="username" class="input_lik" required></td>
+                </tr>
+                <tr>
+                <td>密码：</td>
+                    <td><input type="password" id="password" name="password" class="input_lik" required></td>
+                </tr>
+                <tr>
+                    <td>性别：</td>
+                    <td>
+                        <input type="radio" id="male" name="gender" value="male" checked>男
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">女</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>邮箱：</td>
+                    <td><input type="email" id="email" name="email" class="input_lik" required></td>
+                </tr>
+                <tr>
+                    <td>电话：</td>
+                    <td><input type="tel" id="phone" name="phone" class="input_lik" required></td>
+                </tr>
+                <tr>
+                    <td>出生日期：</td>
+                    <td><input type="date" id="birthdate" class="input_lik" name="birthdate" required></td>
+                </tr>
+            </table>
+        </form>
+        <button type="submit" class="button_clivk" id="myBu">注册</button>
+        <script src="./JavaScript/Register2.js"></script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,380 @@
+/* 头部背景 */
+.header{
+    background-color:white;
+    text-align: center;
+    padding: 20px;
+    background-image: url('../images/头部背景.png');
+    background-size: cover;
+}
+/* 头部文字 */
+.milky{
+    font-size: 60px;   /*设置文字大小*/
+    color:#111110;  /*设置文字颜色*/
+    text-shadow: 0 8px 10px #d8d454;  /*设置文字阴影*/                  
+    font-weight: bolder;  /*设置文字宽度*/                              
+    text-align: center;  /*设置文字居中*/                              
+ }
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* 菜单导航 */
+.topnav{
+    overflow: hidden;
+    background-color: #fb1313;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0e6dea;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 220px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #111;
+}
+
+/* 主体 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.ALL {
+    display: flex;
+    height: 100vh;
+    
+}
+
+.left_div, .right_div {
+    flex: 0 0 200px; /* 左右侧固定宽度 */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.main_content {
+    flex: 1; /* 中间部分占据剩余空间 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.Middle_Middle {
+    flex: 1; /* 中间部分占据剩余空间 */
+    max-width: 800px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #f0f0f0;
+}
+
+.Middle_Middle img {
+    display: none;
+    width: 100%; /* 图片宽度100% */
+    height: auto; /* 高度自适应 */
+}
+
+.Middle_Middle img.active {
+    display: block;
+}
+
+.controls {
+    position: absolute;
+    bottom: 20px; /* 控制按钮距离底部20px */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.controls button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.Middle_End {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    width: 100%;
+}
+
+.right_div {
+    flex: 0 0 200px; /* 左右侧固定宽度 */
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+}
+p {
+    text-align:left;
+    white-space: pre-wrap;
+    margin:1em 0;
+    padding:0 0 0 2em;
+    text-indent:-1.5em;
+    font:normal normal 16px/1.6em "宋体";
+    color:#000;
+
+}
+
+.floating-image {
+    position: fixed;
+    top: 220px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.floating-image img {
+    width: 150px; /* Adjust image size as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+   
+}
+.footer ul {
+    margin-left: 500px;
+}
+
+.footer ul li {
+    display: block;
+    margin-left: 60px;
+    font-size: 16px; /* 设置字体大小 */
+}
+.ul_foot{
+    background-color: #333;
+}
+
+/* 登录 */
+.b_middle {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+.login-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+.Time{
+    margin-top: 30px;
+    margin-left: 600px;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+.input_lik {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: calc(100% - 22px); /* Adjust for padding */
+}
+
+.error-message {
+    color: red;
+    font-size: 0.8em;
+    height: 1em; /* Reserve space for the error message */
+}
+
+.button_clivk {
+    padding: 20px;
+    width: 80px;
+    background-color:cornflowerblue;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-left: 200px;
+}
+
+button:hover {
+    background-color: cornflowerblue;
+}
+.A {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.error-message {
+    color: red;
+    font-size: 12px;
+}
+.register1{
+    margin-left: 1200px;
+   font-size: x-large;
+   font-weight: 1000;
+   color: #8811b7;
+}
+.register2{
+    margin-left: 1200px;
+   font-size: x-large;
+   font-weight: 1000;
+   color: #8811b7;
+}
+div>a:hover{
+    color: #000;
+}
+/* 地理风貌 */
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.section {
+    flex: 1;
+    position: relative;
+}
+
+.section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 10px; /* 调整文字距顶部的距离 */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    border-radius: 5px;
+}
+.overlay1 {
+    position: absolute;
+    top: 10px; /* 调整文字距顶部的距离 */
+    left: 32%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 50px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.suspension{
+    font-size: large;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 1000;
+}
+
+/* 主要景观 */
+.con {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sec {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #000;
+}
+.sec .text {
+    flex: 1;
+    text-align: left;
+}
+.sec img {
+    width: 240px;
+    height: 145px;
+    object-fit: cover;
+}
+
+/* 旅游信息 */
+.paly{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 注册 */
+.regiter2{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 500px;
+    height: 400px;
+    background-color: white;
+}
+.word_top{
+    text-align: center;
+    font-size:xx-large;
+}
+.button_clivk1{
+    padding: 20px;
+    width:80px;
+    background-color:cornflowerblue;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-left: 100px;
+}
